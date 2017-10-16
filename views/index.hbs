@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HBS Practice</title>
+  </head>
+  <body>
+    <h1>
+      {{name}}
+    </h1>
+
+    <ol>
+      <h4>FOOD</h4>
+      {{#each foods}}
+        <li>{{this}}</li>
+      {{/each}}
+      {{#if drink}}
+      <h4>DRINKS</h4>
+        <li>{{drink}}</li>
+      {{else}}
+        <li>No favorite drink</li>
+      {{/if}}
+      {{#if alcohol}}
+        <li>{{alcohol}}</li>
+      {{else}}
+        <li>No favorite alcohol</li>
+      {{/if}}
+    </ol>
+  </body>
+</html>
